@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:id="@+id/main">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        app:cardCornerRadius="25dp"
+        android:padding="10dp"
+        android:elevation="15dp"
+        app:cardElevation="10dp"
+        app:cardBackgroundColor="#F6E54B">
+    <TextView
+        android:layout_margin="5dp"
+        android:id="@+id/tvWelcome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Welcome to KYC Verification"
+        android:textSize="24sp"
+        android:textAlignment="center"
+        />
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        app:cardCornerRadius="25dp"
+        android:padding="10dp"
+        android:elevation="15dp"
+        app:cardElevation="8dp"
+        >
+    <Spinner
+        android:id="@+id/document_type_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        app:cardCornerRadius="25dp"
+        android:padding="10dp"
+        android:elevation="15dp"
+        app:cardElevation="8dp"
+        >
+        <LinearLayout
+            android:layout_margin="15dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+    <EditText
+        android:id="@+id/etFullName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Full Name"
+        android:inputType="textPersonName"
+        android:layout_marginBottom="16dp" />
+
+    <EditText
+        android:id="@+id/etDocumentNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Document Number"
+        android:inputType="text"
+        android:layout_marginBottom="16dp" />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+    <Button
+        android:id="@+id/btnVerifyDocument"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Verify Document"
+        android:layout_marginTop="5dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="10dp" />
+
+    <!-- Step 2: OTP Verification -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        app:cardCornerRadius="25dp"
+        android:padding="5dp"
+        android:visibility="gone"
+        android:elevation="15dp"
+        app:cardElevation="8dp"
+        >
+    <EditText
+        android:id="@+id/etOtp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter OTP"
+        android:inputType="number"
+        android:layout_margin="10dp"
+        android:layout_marginBottom="16dp" />
+    </androidx.cardview.widget.CardView>
+    <Button
+        android:id="@+id/btnVerifyOtp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Verify OTP"
+        android:visibility="gone"
+        android:layout_gravity="center"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Step 3: KYC Complete -->
+    <TextView
+        android:id="@+id/tvKycStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="KYC Verification Complete!"
+        android:textSize="18sp"
+        android:textAlignment="center"
+        android:visibility="gone" />
+
+</LinearLayout>
+

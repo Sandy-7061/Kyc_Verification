@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Kyc Verification</string>
+    <string-array name="document_types_array">
+        <item>Aadhaar Card</item>
+        <item>Passport</item>
+        <item>National ID Card</item>
+        <item>Driver License</item>
+        <item>Voter ID</item>
+    </string-array>
+
+</resources>

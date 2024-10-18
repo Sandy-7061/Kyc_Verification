@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "778332519741",
+    "project_id": "kycverification-41f1d",
+    "storage_bucket": "kycverification-41f1d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:778332519741:android:828c9855f139d53b4f1954",
+        "android_client_info": {
+          "package_name": "sandeep.kycverification"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAT8MX2wferafw1C27TGGNUzNnELIC2siE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
